@@ -34,7 +34,7 @@ export interface CategoryOption {
 export const CATEGORIES: CategoryOption[] = [
   { value: "vialidad_alcantarillado", label: "Vialidad y Alcantarillado", icon: "road", color: "#2563eb" },
   { value: "aseo_urbano", label: "Aseo Urbano", icon: "cleanup", color: "#16a34a" },
-  { value: "alumbrado_publico", label: "Alumbrado Publico", icon: "light", color: "#ca8a04" },
+  { value: "alumbrado_publico", label: "Alumbrado Público", icon: "light", color: "#ca8a04" },
 ];
 
 export const SEVERITY_COLORS = {

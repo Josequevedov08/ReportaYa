@@ -1,7 +1,8 @@
-svg xmlns="http://www.w3.org/2000/svg" width="192" height="192" viewBox="0 0 192 192">
-  <rect width="192" height="192" fill="#ffffff"/>
-  <circle cx="96" cy="96" r="48" fill="#2563eb"/>
-  <path d="M96 48a48 48 0 1 0 0 96 48 48 0 0 0 0-96zm0 80a32 32 0 1 1 0-64 32 32 0 0 1 0 64z" fill="#ffffff"/>
-  <path d="M144 96c0-4.42-3.58-8-8-8s-8 3.58-8 8 3.58 8 8 8 8-3.58 8-8z" fill="#2563eb"/>
-  <path d="M60 96c0-4.42-3.58-8-8-8s-8 3.58-8 8 3.58 8 8 8 8-3.58 8-8z" fill="#2563eb"/>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 192 192" width="192" height="192">
+  <rect width="192" height="192" rx="32" fill="#003049"/>
+  <circle cx="96" cy="76" r="24" fill="#D62828"/>
+  <path d="M48 144 C48 116 68 96 96 96 C124 96 144 116 144 144" fill="none" stroke="#FFFFFF" stroke-width="8" stroke-linecap="round"/>
+  <rect x="84" y="52" width="8" height="20" rx="4" fill="#FFFFFF"/>
+  <circle cx="96" cy="64" r="4" fill="#FFFFFF"/>
+  <text x="96" y="175" text-anchor="middle" fill="#FFFFFF" font-size="20" font-family="Arial, sans-serif" font-weight="bold">REPORTAYA</text>
 </svg>

@@ -5,7 +5,7 @@ import { API_BASE } from '../config'
 const CATEGORIES = [
   { value: 'vialidad_alcantarillado', label: 'Vialidad y Alcantarillado' },
   { value: 'aseo_urbano', label: 'Aseo Urbano' },
-  { value: 'alumbrado_publico', label: 'Alumbrado Publico' }
+  { value: 'alumbrado_publico', label: 'Alumbrado Público' }
 ]
 
 export function ReportForm({ visible, onClose, onSubmit, capturedImage, onRetake, category }) {

@@ -1,7 +1,7 @@
 {
   "name": "ReportaYa - Maracaibo",
   "short_name": "ReportaYa",
-  "description": "Plataforma ciudadana anonima para reportar problemas viales, aseo urbano y alumbrado publico en Maracaibo. PWA instalable.",
+  "description": "Plataforma ciudadana anónima para reportar problemas viales, aseo urbano y alumbrado público en Maracaibo. PWA instalable.",
   "start_url": "/",
   "display": "standalone",
   "background_color": "#ffffff",
