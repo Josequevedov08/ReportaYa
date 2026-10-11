@@ -117,4 +117,4 @@ ReportaYa/
 
 ## Licencia
 
-MIT - Desarrollado para la Alcaldia de Maracaibo.
+MIT - Desarrollado para Alcaldia Municipales
