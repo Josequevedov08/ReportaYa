@@ -1,0 +1,27 @@
+{
+  "src": {
+    "security": {
+      "files": {
+        "auth.py": "FastAPI security dependency: login, JWT generation, token verification, admin role check",
+        "fingerprint.py": "Anonymous device fingerprinting (hash from user-agent + IP + timestamp), stored in IndexedDB for rate limiting",
+        "permissions.py": "Role-based access control: inspector/coordinator/admin scopes per endpoint"
+      }
+    },
+    "services": {
+      "geofencing.py": "Geospatial logic: 30m duplicate prevention, 200m validation radius check using PostGIS ST_DistanceSphere, severity calculation by days open",
+      "incidents.py": "Incident CRUD with geospatial validation, GeoJSON serialization, status transitions",
+      "validations.py": "Validation logic: confirm/reject only within 200m radius, duplicate validator prevention",
+      "auth.py": "Password hashing with bcrypt, token generation and verification using python-jose"
+    },
+    "schemas": {
+      "incident.py": "Pydantic models for incident creation/read/update with GeoJSON geometry export",
+      "auth.py": "Token, login form, user out schemas",
+      "validation.py": "Validation schema with location coords and confirmation flag"
+    }
+  },
+  "db": {
+    "migrations": {
+      "9f3a2c1_initial_schema.py": "Alembic migration: creates users, incidents (with PostGIS POINT), validations, report_sequences tables with spatial indexes"
+    }
+  }
+}
