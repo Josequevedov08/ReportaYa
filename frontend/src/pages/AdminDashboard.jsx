@@ -1,5 +1,5 @@
 import React, { useState, useEffect, useRef } from 'react'
-import './AdminDashboard.css'
+import '../components/AdminDashboard.css'
 
 /**
  * Dashboard Administrativo de ReportaYa

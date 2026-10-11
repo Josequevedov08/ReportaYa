@@ -1,46 +1,47 @@
-# ReportaYa - Plataforma Civicana Anonima
+# ReportaYa - Plataforma Cívica Anónima
 
-Plataforma web PWA para reportar problemas viales, aseo urbano y alumbrado publico en Maracaibo, Venezuela. Anonima, ligera y extensible a nivel nacional.
+Plataforma web PWA para reportar problemas viales, aseo urbano y alumbrado público en Maracaibo, Venezuela. Anónima, ligera y extensible a nivel nacional.
 
-## Caracteristicas
+## Características
 
 ### PWA Instalable
 - Instalable directamente desde el navegador
 - Funciona offline con Service Worker
-- Manifest configurado para instalacion movil
+- Manifest configurado para instalación móvil
 
-### Captura con Camara
-- Camara en vivo obligatoria para reportes
-- Bloqueo de uploads desde galeria
-- Geolocalizacion automatica
+### Captura con Cámara
+- Cámara en vivo obligatoria para reportes
+- Bloqueo de uploads desde galería
+- Geolocalización automática
 
-### Moderacion Automatica
+### Moderación Automática
 - Filtro de contenido NSFW previo al guardado
-- Estado de revisions condicional
-- Control ciudadana con denuncias anonimas
+- Estado de revisión condicional
+- Contraloría ciudadana con denuncias anónimas
 
 ### Dashboard Administrativo
 - Heatmap interactivo
-- Filtros por estado/categoria
-- Metricas de gestion
+- Filtros por estado/categoría
+- Métricas de gestión
 - Purga con un solo clic
+- Subida de foto de reparación y cierre
 
-## Tecnologias
+## Tecnologías
 
 ### Backend
 - FastAPI - API RESTful
 - SQLAlchemy - ORM
 - SQLite (dev) / PostgreSQL + PostGIS (prod)
-- JWT - Autenticacion
+- JWT - Autenticación
 
 ### Frontend
 - React - Interfaz
 - Vite - Build tool
-- React Router - Navegacion
+- React Router - Navegación
 - Leaflet - Mapas interactivos
 - Service Worker - PWA offline
 
-## Instalacion
+## Instalación
 
 ### Backend
 ```bash
@@ -75,6 +76,7 @@ ReportaYa/
 ├── frontend/
 │   ├── src/
 │   │   ├── App.jsx
+│   │   ├── pages/
 │   │   ├── ui/
 │   │   ├── componentes/
 │   │   ├── components/
@@ -82,6 +84,7 @@ ReportaYa/
 │   ├── public/
 │   │   ├── manifest.json
 │   │   ├── sw.js
+│   │   ├── icons/
 │   │   └── legal/
 │   └── package.json
 └── README.md
@@ -89,8 +92,8 @@ ReportaYa/
 
 ## API Endpoints
 
-### Autenticacion
-- POST /api/v1/auth/login - Iniciar sesion
+### Autenticación
+- POST /api/v1/auth/login - Iniciar sesión
 
 ### Incidentes
 - POST /api/v1/incidents - Crear reporte
@@ -100,21 +103,25 @@ ReportaYa/
 - POST /api/v1/incidents/{id}/flag - Denunciar
 - GET /api/v1/incidents/all - Admin
 
-### Moderacion (Admin)
+### Moderación (Admin)
 - GET /api/v1/moderation/pending - Pendientes
 - POST /api/v1/moderation/approve/{id} - Aprobar
 - POST /api/v1/moderation/reject/{id} - Rechazar
 - POST /api/v1/moderation/purge/{id} - Eliminar + bloquear
 - GET /api/v1/moderation/blocked - Dispositivos bloqueados
-- GET /api/v1/moderation/stats - Estadisticas
+- GET /api/v1/moderation/stats - Estadísticas
 
-## Politicas Legales
+## Panel Administrativo
 
-- Terminos y Condiciones
-- Politica de Privacidad
-- Politica de Cookies
+El panel administrativo está oculto en la ruta secreta `/MunicipioMcbo` (no se muestra en el menú principal).
+
+## Políticas Legales
+
+- Términos y Condiciones
+- Política de Privacidad
+- Política de Cookies
 - Descargo de Responsabilidad
 
 ## Licencia
 
-MIT - Desarrollado para Alcaldia Municipales
+MIT - Desarrollado para la Alcaldía de Maracaibo.

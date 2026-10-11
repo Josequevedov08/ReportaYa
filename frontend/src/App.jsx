@@ -3,7 +3,6 @@ import { Routes, Route, Link, useLocation } from 'react-router-dom';
 import IncidentMap from './componentes/IncidentMap';
 import AdminDashboard from './pages/AdminDashboard';
 import './ui/estilos.css';
-import './components/AdminDashboard.css';
 import './componentes/IncidentMap.css';
 
 // Estilos globales
