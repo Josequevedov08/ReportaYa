@@ -124,4 +124,4 @@ El panel administrativo está oculto en la ruta secreta `/MunicipioMcbo` (no se 
 
 ## Licencia
 
-MIT - Desarrollado para la Alcaldía de Maracaibo.
+MIT - Desarrollado para las Alcaldía Minicipales
